@@ -1,0 +1,64 @@
+{
+  "application": {
+    "name": "Professional Expense Tracker",
+    "version": "1.0.0",
+    "author": "Aman Kanojiya"
+  },
+  "ui": {
+    "theme": "superhero",
+    "window_size": {
+      "width": 1200,
+      "height": 700
+    },
+    "resizable": true,
+    "font": {
+      "family": "Arial",
+      "size_normal": 10,
+      "size_large": 12,
+      "size_heading": 14
+    }
+  },
+  "data": {
+    "file_name": "expenses.csv",
+    "auto_backup": true,
+    "backup_frequency_days": 7,
+    "backup_location": "./backups/"
+  },
+  "categories": {
+    "predefined": [
+      "Food",
+      "Transport",
+      "Entertainment",
+      "Bills",
+      "Shopping",
+      "Health",
+      "Other"
+    ],
+    "allow_custom": true,
+    "case_sensitive": false
+  },
+  "currency": {
+    "symbol": "Rs",
+    "code": "INR",
+    "decimal_places": 2
+  },
+  "reports": {
+    "default_period": "month",
+    "include_charts": true,
+    "export_format": "csv"
+  },
+  "features": {
+    "enable_search": true,
+    "enable_filter": true,
+    "enable_charts": true,
+    "enable_export": true,
+    "enable_statistics": true,
+    "confirm_delete": true
+  },
+  "advanced": {
+    "date_format": "%Y-%m-%d",
+    "number_format": "%.2f",
+    "max_description_length": 200,
+    "auto_save": true
+  }
+}
