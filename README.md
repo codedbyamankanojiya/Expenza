@@ -1,4 +1,4 @@
-# 💰 Professional Expense Tracker
+# 💰 Expenza - A Modern Expense Tracker
 
 <div align="center">
 
@@ -32,7 +32,7 @@
 
 ## 🎯 Overview
 
-**Professional Expense Tracker** is a comprehensive desktop application built with Python that helps you manage your personal finances efficiently. Developed by Aman Kanojiya, this application features an intuitive user interface powered by ttkbootstrap, real-time statistics, and powerful visualization tools, making expense tracking simple and effective.
+**Expanza - Modern Expense Tracker** is a comprehensive desktop application built with Python that helps you manage your personal finances efficiently. Developed by Aman Kanojiya, this application features an intuitive user interface powered by ttkbootstrap, real-time statistics, and powerful visualization tools, making expense tracking simple and effective.
 
 ### Why Choose This Expense Tracker?
 
@@ -49,24 +49,24 @@
 
 ### Core Functionality
 
-| Feature | Description |
-|---------|-------------|
-| **➕ Add Expenses** | Quickly add expenses with category, amount, and description |
-| **✏️ Edit Expenses** | Modify existing expense entries |
-| **🗑️ Delete Expenses** | Remove unwanted expense records with confirmation |
-| **📝 Expense List** | View all expenses in an organized table format |
+| Feature                |                     Description                         |
+|------------------------|---------------------------------------------------------|
+| **➕ Add Expenses**    | Quickly add expenses with category, amount, and description                 |
+| **✏️ Edit Expenses**   | Modify existing expense entries                                          |
+| **🗑️ Delete Expenses** | Remove unwanted expense records with   confirmati                |
+| **📝 Expense List**    | View all expenses in an organized table format                           |
 
 ### Advanced Features
 
-| Feature | Description |
-|---------|-------------|
-| **🔍 Smart Search** | Real-time search across all expense fields |
-| **🎯 Category Filter** | Filter expenses by predefined categories |
+| Feature               |                 Description                               |
+|-----------------------|-----------------------------------------------------------|
+| **🔍 Smart Search** | Real-time search across all expense fields                 |
+| **🎯 Category Filter** | Filter expenses by predefined categories                |
 | **📊 Statistics Dashboard** | Live statistics showing total expenses, entry count, and categories |
-| **📈 Visual Charts** | Interactive pie and bar charts for expense distribution |
+| **📈 Visual Charts** | Interactive pie and bar charts for expense distribution   |
 | **📋 Period Reports** | Generate reports for daily, weekly, monthly, or yearly periods |
-| **📤 Data Export** | Export expenses to CSV or JSON format |
-| **🎨 Modern UI** | Beautiful dark theme with professional styling |
+| **📤 Data Export** | Export expenses to CSV or JSON format                       |
+| **🎨 Modern UI**   | Beautiful dark theme with professional styling              |
 
 ### Predefined Categories
 
@@ -82,13 +82,13 @@
 
 ## 🛠️ Technology Stack
 
-| Technology | Purpose |
-|------------|---------|
-| **Python 3.8+** | Core programming language |
-| **ttkbootstrap** | Modern themed Tkinter widgets |
-| **Matplotlib** | Data visualization and charting |
-| **CSV** | Data storage and export |
-| **JSON** | Alternative export format |
+| Technology      | Purpose                         |
+|-----------------|---------------------------------|
+| **Python 3.8+** | Core programming language       |
+| **ttkbootstrap**| Modern themed Tkinter widgets   |
+| **Matplotlib**  | Data visualization and charting |
+| **CSV**         | Data storage and export         |
+| **JSON**        | Alternative export format       |
 
 ---
 
@@ -112,13 +112,13 @@
 
 3. **Run the Application**
    ```bash
-   python expensetracker.py
+   python expenza.py
    ```
 
 ### Quick Install (One-Line)
 
 ```bash
-pip install ttkbootstrap matplotlib && python expensetracker.py
+pip install ttkbootstrap matplotlib && python expenza.py
 ```
 
 ---
@@ -155,12 +155,12 @@ pip install ttkbootstrap matplotlib && python expensetracker.py
 
 ### Keyboard Shortcuts
 
-| Shortcut | Action |
-|----------|--------|
-| `Enter` | Add expense (when in input fields) |
-| `Delete` | Delete selected expense |
-| `Ctrl+F` | Focus search box |
-| `Esc` | Clear fields |
+| Shortcut |               Action               |
+|----------|------------------------------------|
+| `Enter`  | Add expense (when in input fields) |
+| `Delete` | Delete selected expense            |
+| `Ctrl+F` | Focus search box                   |
+| `Esc`    | Clear fields                       |
 
 ---
 
@@ -179,8 +179,8 @@ pip install ttkbootstrap matplotlib && python expensetracker.py
 │  • Description                  │  Categories: X            │
 │                                 │                           │
 │  Action Buttons                 │  🔍 Search & Filter       │
-│  [Add] [Edit] [Delete] [Clear] │  Search: [________]       │
-│  [Export] [Charts] [Reports]   │  Filter: [All ▼]          │
+│  [Add] [Edit] [Delete] [Clear] │  Search: [________]        │
+│  [Export] [Charts] [Reports]   │  Filter: [All ▼]           │
 ├─────────────────────────────────┴───────────────────────────┤
 │  📝 Expense Records                                         │
 │  ┌───────────┬──────────┬─────────┬────────────────────┐  │
@@ -200,11 +200,11 @@ pip install ttkbootstrap matplotlib && python expensetracker.py
 ## 📁 Project Structure
 
 ```
-expense-tracker/
+expenza/
 │
-├── expensetracker.py          # Main application file
-├── requirements.txt           # Python dependencies
-├── README.md                  # Project documentation
+├── expenza.py                # Main application file
+├── requirements.txt          # Python dependencies
+├── README.md                 # Project documentation
 ├── USER_GUIDE.md             # Detailed user manual
 ├── QUICKSTART.md             # Quick start guide
 ├── ARCHITECTURE.md           # Technical architecture
@@ -245,7 +245,7 @@ Export your data in industry-standard formats:
 
 ### Customizing Categories
 
-Edit the category list in `expensetracker.py`:
+Edit the category list in `expenza.py`:
 
 ```python
 filter_combo['values'] = ("All", "Food", "Transport", "Entertainment", 
@@ -285,7 +285,7 @@ Contributions are welcome! Here's how you can help:
 
 ```bash
 # Fork and clone the repository
-git clone https://github.com/codedbyamankanojiya/expense-tracker.git
+git clone https://github.com/codedbyamankanojiya/expenza.git
 
 # Create a feature branch
 git checkout -b feature/amazing-feature
@@ -402,6 +402,6 @@ If you find this project helpful, please consider:
 
 **Made with ❤️ and Python**
 
-[Back to Top](#-professional-expense-tracker)
+[Back to Top](#-Expenza)
 
 </div>
