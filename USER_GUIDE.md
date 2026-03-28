@@ -1,4 +1,4 @@
-# 📖 User Guide - Professional Expense Tracker
+# 📖 User Guide - Expenza
 
 **Developer**: Aman Kanojiya
 
@@ -472,7 +472,7 @@ Total spent in the month: Rs 15,250.75
 
 ## Data File Location
 
-**Default Location**: Same folder as expensetracker.py
+**Default Location**: Same folder as expenza.py
 
 **File Name**: expenses.csv
 

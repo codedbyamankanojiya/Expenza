@@ -2,7 +2,7 @@
 
 **Developer**: Aman Kanojiya
 
-Get up and running with Professional Expense Tracker in 5 minutes!
+Get up and running with Expenza in 5 minutes!
 
 ---
 
@@ -11,13 +11,13 @@ Get up and running with Professional Expense Tracker in 5 minutes!
 ### Option 1: Quick Install
 ```bash
 pip install ttkbootstrap matplotlib
-python expensetracker.py
+python expenza.py
 ```
 
 ### Option 2: Using Requirements File
 ```bash
 pip install -r requirements.txt
-python expensetracker.py
+python expenza.py
 ```
 
 ---

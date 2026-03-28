@@ -6,7 +6,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│           Professional Expense Tracker                       │
+│           Expenza                       │
 │                    Desktop Application                       │
 └─────────────────────────────────────────────────────────────┘
                               │
@@ -233,7 +233,7 @@ export_expenses()
 ### Import Structure
 
 ```
-expensetracker.py
+expenza.py
 │
 ├── Standard Library
 │   ├── csv              → CSV file operations
@@ -575,7 +575,7 @@ State Transitions:
 ├─────────────────────────────────────────────────────────┤
 │                                                          │
 │  Application Files                                       │
-│  ├── expensetracker.py      (Main application)          │
+│  ├── expenza.py      (Main application)          │
 │  ├── requirements.txt        (Dependencies)             │
 │  ├── README.md              (Documentation)             │
 │  ├── USER_GUIDE.md          (User manual)               │
@@ -601,7 +601,7 @@ State Transitions:
 
 **Architecture Documentation**
 
-*Professional Expense Tracker*
+*Expenza*
 
 **Developer**: Aman Kanojiya
 

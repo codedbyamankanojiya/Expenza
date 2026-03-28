@@ -319,7 +319,7 @@ initialize_file()
 
 # Main GUI application
 root = tb.Window(themename="superhero")
-root.title("💰 Professional Expense Tracker")
+root.title("💰 Expenza")
 root.geometry("1200x700")
 root.resizable(True, True)
 

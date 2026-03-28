@@ -128,7 +128,7 @@ pip install ttkbootstrap matplotlib && python expenza.py
 ### Getting Started
 
 1. **Launch the Application**
-   - Run `python expensetracker.py`
+   - Run `python expenza.py`
    - The main window will open with all features accessible
 
 2. **Adding an Expense**
