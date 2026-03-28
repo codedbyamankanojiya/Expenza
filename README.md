@@ -171,7 +171,7 @@ pip install ttkbootstrap matplotlib && python expenza.py
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  💰 Professional Expense Tracker                            │
+│  💰 Expenza                    |                            │
 ├─────────────────────────────────┬───────────────────────────┤
 │  Input Fields                   │  📊 Statistics            │
 │  • Category                     │  Total Expenses: Rs X.XX  │

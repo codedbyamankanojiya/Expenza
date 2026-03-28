@@ -6,8 +6,8 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│           Expenza                       │
-│                    Desktop Application                       │
+│                          Expenza                            │
+│                    Desktop Application                      │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
@@ -79,31 +79,31 @@ tkinter.Window (root)
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    Core Functions                        │
+│                    Core Functions                       │
 ├─────────────────────────────────────────────────────────┤
-│                                                          │
-│  Data Management                                         │
+│                                                         │
+│  Data Management                                        │
 │  ├── initialize_file()      → Create CSV if not exists  │
 │  ├── add_expense()          → Add new expense           │
 │  ├── edit_expense()         → Modify existing expense   │
 │  ├── delete_expense()       → Remove expense            │
 │  └── view_expenses()        → Load and display all      │
-│                                                          │
-│  Search & Filter                                         │
+│                                                         │
+│  Search & Filter                                        │
 │  ├── search_expenses()      → Real-time search          │
 │  └── filter_by_category()  → Category-based filter      │
-│                                                          │
-│  Analytics                                               │
+│                                                         │
+│  Analytics                                              │
 │  ├── update_statistics()    → Calculate totals          │
 │  ├── generate_report()      → Period-based reports      │
 │  └── show_chart()          → Visual analytics           │
-│                                                          │
-│  Data Export                                             │
+│                                                         │
+│  Data Export                                            │
 │  └── export_expenses()      → CSV/JSON export           │
-│                                                          │
-│  UI Helpers                                              │
+│                                                         │
+│  UI Helpers                                             │
 │  └── clear_fields()         → Reset input fields        │
-│                                                          │
+│                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -181,28 +181,28 @@ export_expenses()
 ┌──────────────────────────────────────────────────────────┐
 │                    Data Storage                          │
 ├──────────────────────────────────────────────────────────┤
-│                                                           │
+│                                                          │
 │  expenses.csv (Primary Storage)                          │
-│  ┌─────────────────────────────────────────────────┐    │
-│  │ Date       │ Category  │ Amount │ Description   │    │
-│  ├─────────────────────────────────────────────────┤    │
-│  │ 2024-01-15 │ Food      │ 250.50 │ Lunch at cafe │    │
-│  │ 2024-01-15 │ Transport │ 100.00 │ Taxi fare     │    │
-│  └─────────────────────────────────────────────────┘    │
-│                                                           │
+│  ┌─────────────────────────────────────────────────┐     │
+│  │ Date       │ Category  │ Amount │ Description   │     │
+│  ├─────────────────────────────────────────────────┤     │
+│  │ 2024-01-15 │ Food      │ 250.50 │ Lunch at cafe │     │
+│  │ 2024-01-15 │ Transport │ 100.00 │ Taxi fare     │     │
+│  └─────────────────────────────────────────────────┘     │
+│                                                          │
 │  Format: CSV (Comma-Separated Values)                    │
-│  Encoding: UTF-8                                          │
+│  Encoding: UTF-8                                         │
 │  Location: Same directory as script                      │
-│                                                           │
+│                                                          │
 └──────────────────────────────────────────────────────────┘
 
 ┌──────────────────────────────────────────────────────────┐
 │                  Data Operations                         │
 ├──────────────────────────────────────────────────────────┤
-│                                                           │
-│  CREATE (Initialize)                                      │
+│                                                          │
+│  CREATE (Initialize)                                     │
 │  └── initialize_file() → Create CSV with header          │
-│                                                           │
+│                                                          │
 │  READ (View/Search/Filter)                               │
 │  ├── view_expenses() → Read all records                  │
 │  ├── search_expenses() → Read and filter                 │
@@ -210,19 +210,19 @@ export_expenses()
 │  ├── update_statistics() → Read and aggregate            │
 │  ├── generate_report() → Read and calculate              │
 │  └── show_chart() → Read and visualize                   │
-│                                                           │
-│  UPDATE (Edit)                                            │
+│                                                          │
+│  UPDATE (Edit)                                           │
 │  └── edit_expense() → Read, modify, write                │
-│                                                           │
-│  DELETE                                                   │
+│                                                          │
+│  DELETE                                                  │
 │  └── delete_expense() → Read, remove, write              │
-│                                                           │
-│  APPEND (Add)                                             │
+│                                                          │
+│  APPEND (Add)                                            │
 │  └── add_expense() → Append new record                   │
-│                                                           │
-│  EXPORT                                                   │
+│                                                          │
+│  EXPORT                                                  │
 │  └── export_expenses() → Read and convert format         │
-│                                                           │
+│                                                          │
 └──────────────────────────────────────────────────────────┘
 ```
 
@@ -267,10 +267,10 @@ expenza.py
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                   Event Handlers                         │
+│                   Event Handlers                        │
 ├─────────────────────────────────────────────────────────┤
-│                                                          │
-│  Button Click Events                                     │
+│                                                         │
+│  Button Click Events                                    │
 │  ├── Add Expense Button                                 │
 │  │   └── add_expense()                                  │
 │  │       ├── Validate input                             │
@@ -279,14 +279,14 @@ expenza.py
 │  │       ├── Clear fields                               │
 │  │       ├── Refresh view                               │
 │  │       └── Update statistics                          │
-│  │                                                       │
+│  │                                                      │
 │  ├── Edit Button                                        │
 │  │   └── edit_expense()                                 │
 │  │       ├── Get selected item                          │
 │  │       ├── Load into fields                           │
 │  │       ├── Remove old entry                           │
 │  │       └── Show edit message                          │
-│  │                                                       │
+│  │                                                      │
 │  ├── Delete Button                                      │
 │  │   └── delete_expense()                               │
 │  │       ├── Get selected item                          │
@@ -295,11 +295,11 @@ expenza.py
 │  │       ├── Show success message                       │
 │  │       ├── Refresh view                               │
 │  │       └── Update statistics                          │
-│  │                                                       │
+│  │                                                      │
 │  ├── Clear Button                                       │
 │  │   └── clear_fields()                                 │
 │  │       └── Empty all input fields                     │
-│  │                                                       │
+│  │                                                      │
 │  ├── Export Button                                      │
 │  │   └── export_expenses()                              │
 │  │       ├── Show file dialog                           │
@@ -307,7 +307,7 @@ expenza.py
 │  │       ├── Convert format                             │
 │  │       ├── Write to file                              │
 │  │       └── Show success message                       │
-│  │                                                       │
+│  │                                                      │
 │  ├── View Charts Button                                 │
 │  │   └── show_chart()                                   │
 │  │       ├── Read CSV data                              │
@@ -315,27 +315,27 @@ expenza.py
 │  │       ├── Create charts                              │
 │  │       ├── Create window                              │
 │  │       └── Display charts                             │
-│  │                                                       │
+│  │                                                      │
 │  └── Report Menu Items                                  │
 │      └── generate_report(period)                        │
 │          ├── Calculate date range                       │
 │          ├── Filter expenses                            │
 │          ├── Calculate total                            │
 │          └── Show message                               │
-│                                                          │
-│  Keyboard Events                                         │
+│                                                         │
+│  Keyboard Events                                        │
 │  ├── Search Entry KeyRelease                            │
 │  │   └── search_expenses()                              │
 │  │       ├── Get search term                            │
 │  │       ├── Filter expenses                            │
 │  │       └── Update view                                │
-│  │                                                       │
+│  │                                                      │
 │  └── Filter Combobox Selection                          │
 │      └── filter_by_category()                           │
 │          ├── Get category                               │
 │          ├── Filter expenses                            │
 │          └── Update view                                │
-│                                                          │
+│                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -347,26 +347,26 @@ expenza.py
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                  Global Variables                        │
+│                  Global Variables                       │
 ├─────────────────────────────────────────────────────────┤
-│                                                          │
-│  Configuration                                           │
+│                                                         │
+│  Configuration                                          │
 │  └── FILE_NAME = 'expenses.csv'                         │
-│                                                          │
+│                                                         │
 │  UI State Variables (StringVar)                         │
 │  ├── category_var       → Current category input        │
 │  ├── amount_var         → Current amount input          │
 │  ├── description_var    → Current description input     │
 │  ├── search_var         → Current search term           │
 │  └── filter_var         → Current category filter       │
-│                                                          │
-│  UI Components (Widgets)                                 │
-│  ├── root               → Main window                    │
-│  ├── tree               → Expense list treeview          │
-│  ├── total_label        → Total expenses display         │
-│  ├── count_label        → Entry count display            │
+│                                                         │
+│  UI Components (Widgets)                                │
+│  ├── root               → Main window                   │
+│  ├── tree               → Expense lis treeview          │
+│  ├── total_label        → Total expeses display         │
+│  ├── count_label        → Entry cout display            │
 │  └── category_count_label → Category count display      │
-│                                                          │
+│                                                         │
 └─────────────────────────────────────────────────────────┘
 
 State Transitions:
@@ -385,31 +385,31 @@ State Transitions:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                 Error Handling Layers                    │
+│                 Error Handling Layers                   │
 ├─────────────────────────────────────────────────────────┤
-│                                                          │
+│                                                         │
 │  Layer 1: Input Validation                              │
 │  ├── Check for empty fields                             │
 │  ├── Validate amount is numeric                         │
 │  └── Show warning messagebox                            │
-│                                                          │
+│                                                         │
 │  Layer 2: File Operations                               │
 │  ├── Try-except for file access                         │
 │  ├── Handle FileNotFoundError                           │
 │  ├── Handle PermissionError                             │
 │  └── Show error messagebox                              │
-│                                                          │
+│                                                         │
 │  Layer 3: Data Processing                               │
 │  ├── Try-except for CSV parsing                         │
 │  ├── Handle malformed data                              │
 │  ├── Skip invalid rows                                  │
 │  └── Continue processing                                │
-│                                                          │
+│                                                         │
 │  Layer 4: User Confirmation                             │
 │  ├── Confirm before delete                              │
 │  ├── Allow cancel                                       │
 │  └── Prevent accidental data loss                       │
-│                                                          │
+│                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -421,29 +421,29 @@ State Transitions:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│              Performance Optimizations                   │
+│              Performance Optimizations                  │
 ├─────────────────────────────────────────────────────────┤
-│                                                          │
-│  Data Loading                                            │
+│                                                         │
+│  Data Loading                                           │
 │  ├── Load only when needed                              │
 │  ├── Cache in memory during session                     │
 │  └── Incremental updates for add/delete                 │
-│                                                          │
-│  UI Updates                                              │
+│                                                         │
+│  UI Updates                                             │
 │  ├── Batch treeview updates                             │
 │  ├── Lazy chart generation                              │
 │  └── Debounced search (real-time)                       │
-│                                                          │
-│  File Operations                                         │
+│                                                         │
+│  File Operations                                        │
 │  ├── Append for new entries                             │
 │  ├── Full rewrite only for edit/delete                  │
 │  └── Buffered I/O                                       │
-│                                                          │
-│  Memory Management                                       │
+│                                                         │
+│  Memory Management                                      │
 │  ├── Close file handles promptly                        │
 │  ├── Clear chart figures after display                  │
 │  └── Minimal global state                               │
-│                                                          │
+│                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -453,28 +453,28 @@ State Transitions:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                Security Measures                         │
+│                Security Measures                        │
 ├─────────────────────────────────────────────────────────┤
-│                                                          │
-│  Data Protection                                         │
+│                                                         │
+│  Data Protection                                        │
 │  ├── Local storage only (no network)                    │
 │  ├── User-controlled file location                      │
 │  └── No sensitive data encryption (user responsibility) │
-│                                                          │
-│  Input Sanitization                                      │
+│                                                         │
+│  Input Sanitization                                     │
 │  ├── Type validation (amount must be numeric)           │
 │  ├── Length limits (implicit)                           │
 │  └── No SQL injection risk (CSV-based)                  │
-│                                                          │
-│  File System Safety                                      │
+│                                                         │
+│  File System Safety                                     │
 │  ├── Relative paths only                                │
 │  ├── User-selected export paths                         │
 │  └── No arbitrary code execution                        │
-│                                                          │
-│  User Confirmation                                       │
+│                                                         │
+│  User Confirmation                                      │
 │  ├── Confirm destructive operations                     │
 │  └── Clear error messages                               │
-│                                                          │
+│                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -486,39 +486,39 @@ State Transitions:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│              Extension Opportunities                     │
+│              Extension Opportunities                    │
 ├─────────────────────────────────────────────────────────┤
-│                                                          │
-│  1. Add New Categories                                   │
+│                                                         │
+│  1. Add New Categories                                  │
 │     └── Modify filter_combo['values'] list              │
-│                                                          │
-│  2. Change Theme                                         │
+│                                                         │
+│  2. Change Theme                                        │
 │     └── Modify tb.Window(themename="...")               │
-│                                                          │
-│  3. Add New Report Types                                 │
-│     └── Add menu items to report_menu                    │
+│                                                         │
+│  3. Add New Report Types                                │
+│     └── Add menu items to report_menu                   │
 │     └── Extend generate_report() function               │
-│                                                          │
-│  4. Add New Export Formats                               │
+│                                                         │
+│  4. Add New Export Formats                              │
 │     └── Extend export_expenses() function               │
 │     └── Add format handlers                             │
-│                                                          │
-│  5. Add Database Backend                                 │
+│                                                         │
+│  5. Add Database Backend                                │
 │     └── Replace CSV functions with DB queries           │
 │     └── Keep same function signatures                   │
-│                                                          │
-│  6. Add Budget Tracking                                  │
+│                                                         │
+│  6. Add Budget Tracking                                 │
 │     └── Add budget_var and budget functions             │
 │     └── Add budget comparison in statistics             │
-│                                                          │
-│  7. Add Recurring Expenses                               │
+│                                                         │
+│  7. Add Recurring Expenses                              │
 │     └── Add recurrence field and scheduler              │
 │     └── Auto-add on schedule                            │
-│                                                          │
-│  8. Add Multi-Currency                                   │
+│                                                         │
+│  8. Add Multi-Currency                                  │
 │     └── Add currency field                              │
 │     └── Add conversion functions                        │
-│                                                          │
+│                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -530,10 +530,10 @@ State Transitions:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                  Test Coverage                           │
+│                  Test Coverage                          │
 ├─────────────────────────────────────────────────────────┤
-│                                                          │
-│  Unit Tests                                              │
+│                                                         │
+│  Unit Tests                                             │
 │  ├── test_add_expense()                                 │
 │  ├── test_edit_expense()                                │
 │  ├── test_delete_expense()                              │
@@ -542,26 +542,26 @@ State Transitions:
 │  ├── test_update_statistics()                           │
 │  ├── test_generate_report()                             │
 │  └── test_export_expenses()                             │
-│                                                          │
-│  Integration Tests                                       │
+│                                                         │
+│  Integration Tests                                      │
 │  ├── test_add_and_view()                                │
 │  ├── test_edit_workflow()                               │
 │  ├── test_delete_workflow()                             │
 │  └── test_export_import()                               │
-│                                                          │
-│  UI Tests                                                │
+│                                                         │
+│  UI Tests                                               │
 │  ├── test_button_clicks()                               │
 │  ├── test_search_input()                                │
 │  ├── test_filter_selection()                            │
 │  └── test_chart_display()                               │
-│                                                          │
-│  Edge Cases                                              │
+│                                                         │
+│  Edge Cases                                             │
 │  ├── test_empty_file()                                  │
 │  ├── test_corrupted_file()                              │
 │  ├── test_invalid_input()                               │
 │  ├── test_large_dataset()                               │
 │  └── test_special_characters()                          │
-│                                                          │
+│                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -571,27 +571,27 @@ State Transitions:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│              Deployment Structure                        │
+│              Deployment Structure                       │
 ├─────────────────────────────────────────────────────────┤
-│                                                          │
-│  Application Files                                       │
-│  ├── expenza.py      (Main application)          │
+│                                                         │
+│  Application Files                                      │
+│  ├── expenza.py      (Main application)                 │
 │  ├── requirements.txt        (Dependencies)             │
 │  ├── README.md              (Documentation)             │
 │  ├── USER_GUIDE.md          (User manual)               │
 │  ├── QUICKSTART.md          (Quick guide)               │
 │  ├── ARCHITECTURE.md        (This file)                 │
 │  └── config_example.json    (Configuration template)    │
-│                                                          │
+│                                                         │
 │  Runtime Files (Generated)                              │
 │  ├── expenses.csv           (Data storage)              │
 │  └── __pycache__/           (Python cache)              │
-│                                                          │
-│  Optional                                                │
-│  ├── screenshots/           (Application images)         │
+│                                                         │
+│  Optional                                               │
+│  ├── screenshots/           (Application images)        │
 │  ├── backups/              (Data backups)               │
 │  └── exports/              (Exported files)             │
-│                                                          │
+│                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
 

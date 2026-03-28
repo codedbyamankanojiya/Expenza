@@ -107,12 +107,12 @@ Click **📤 Export** → Choose location → Save as CSV or JSON
 
 ## 🆘 Quick Troubleshooting
 
-| Problem | Solution |
-|---------|----------|
-| "Fill all fields" warning | Enter text in all 3 fields |
-| "Invalid amount" error | Use only numbers (250 or 250.50) |
-| Search shows nothing | Check spelling or click "Reset View" |
-| Charts not showing | Add at least one expense first |
+| Problem                   |                      Solution                       |
+|---------------------------|-----------------------------------------------------|
+| "Fill all fields" warning | Enter text in all 3 fields                          |
+| "Invalid amount" error    | Use only numbers (250 or 250.50)                    |
+| Search shows nothing      | Check spelling or click "Reset View"                |
+| Charts not showing        | Add at least one expense first                      |
 
 ---
 
